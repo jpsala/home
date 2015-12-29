@@ -7,11 +7,16 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/subs
+
 # Command Line History (newest to oldest):
-:wq
 :q
+:q!
+:wq
 
 # Search String History (newest to oldest):
+?/subs
 
 # Expression History (newest to oldest):
 
@@ -20,20 +25,92 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"0	CHAR	0
+	history-substring-search:
 ""-	CHAR	0
 	 
 
 # File marks:
-'0  31  29  ~/.zpreztorc
-'1  92  44  ~/.zpreztorc
-'2  39  22  ~/.zpreztorc
-'3  1  50  ~/.zprezto/update_from_git.sh
-'4  1  0  ~/.zshrc
-'5  164  0  ~/.zpreztorc
+'0  273  3  /tmp/jpsala/HG9dBI_Alumno.php
+'1  1  0  ~/.easystroke/preferences-0.5.5
+'2  1  0  ~/.easystroke/actions-0.5.6
+'3  153  0  ~/.zpreztorc
+'4  20  0  ~/.zpreztorc
+'5  1  0  ~/.vimrc
+'6  2  15  ~/.vimrc
+'7  1  0  ~/.zpreztorc
+'8  31  29  ~/.zpreztorc
+'9  32  29  ~/.zpreztorc
 
 # Jumplist (newest first):
--'  31  29  ~/.zpreztorc
+-'  273  3  /tmp/jpsala/HG9dBI_Alumno.php
+-'  1  0  /tmp/jpsala/HG9dBI_Alumno.php
+-'  1  0  ~/.easystroke/preferences-0.5.5
+-'  1  0  ~/.easystroke/actions-0.5.6
+-'  153  0  ~/.zpreztorc
 -'  1  0  ~/.zpreztorc
+-'  20  0  ~/.zpreztorc
+-'  1  0  ~/.vimrc
+-'  2  15  ~/.vimrc
+-'  31  29  ~/.zpreztorc
+-'  37  7  ~/.zpreztorc
+-'  32  0  ~/.zpreztorc
+-'  94  44  ~/.zpreztorc
+-'  41  22  ~/.zpreztorc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  166  0  ~/.zpreztorc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  163  0  ~/.zpreztorc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  93  44  ~/.zpreztorc
+-'  40  22  ~/.zpreztorc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  165  0  ~/.zpreztorc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  162  0  ~/.zpreztorc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
+-'  1  50  ~/.zprezto/update_from_git.sh
+-'  1  0  ~/.zshrc
+-'  1  0  ~/.zshrc
 -'  92  44  ~/.zpreztorc
 -'  39  22  ~/.zpreztorc
 -'  1  50  ~/.zprezto/update_from_git.sh
@@ -66,45 +143,45 @@
 -'  38  22  ~/.zpreztorc
 -'  1  50  ~/.zprezto/update_from_git.sh
 -'  1  0  ~/.zshrc
--'  163  0  ~/.zpreztorc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  160  0  ~/.zpreztorc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  1  0  ~/.zshrc
--'  1  50  ~/.zprezto/update_from_git.sh
--'  1  0  ~/.zshrc
--'  1  0  ~/.zshrc
 
 # History of marks within files (newest to oldest):
 
+> /tmp/jpsala/HG9dBI_Alumno.php
+	"	273	3
+
+> /srv/http/iae/protected/models/Alumno.php
+	"	273	3
+
+> ~/.easystroke/preferences-0.5.5
+	"	1	0
+
+> ~/.easystroke/actions-0.5.6
+	"	1	0
+
 > ~/.zpreztorc
-	"	31	29
+	"	153	0
 	^	31	30
-	.	31	29
-	+	42	10
-	+	86	0
-	+	158	0
-	+	161	0
-	+	164	0
-	+	39	23
-	+	92	44
+	.	153	0
+	+	44	10
+	+	88	0
+	+	160	0
+	+	163	0
+	+	166	0
+	+	41	23
+	+	94	44
+	+	32	29
+	+	32	0
+	+	37	7
+	+	30	13
 	+	31	29
+	+	153	0
+
+> ~/.vimrc
+	"	1	0
+	^	2	16
+	.	1	34
+	+	2	0
+	+	1	34
 
 > ~/.zprezto/update_from_git.sh
 	"	1	50

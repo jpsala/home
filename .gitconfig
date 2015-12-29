@@ -4,3 +4,11 @@
 [core]
 	autocrlf = input
 	safecrlf = true
+	filemode = false
+[alias]
+	ch = checkout
+	s = status
+[merge]
+	tool = meld
+[diff]
+	guitool = meld
