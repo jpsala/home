@@ -1,0 +1,159 @@
+<!-- Creator     : groff version 1.22.3 -->
+<!-- CreationDate: Wed Jun 24 13:23:53 2015 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title></title>
+</head>
+<body>
+
+<hr>
+
+
+<p>yaourtrc &minus; yaourt configuration file</p>
+
+<p style="margin-top: 1em">/etc/yaourtrc</p>
+
+
+<p style="margin-top: 1em"><b>$XDG_CONFIG_HOME</b>/yaourt/yaourtrc</p>
+
+<p style="margin-top: 1em"><b>$HOME</b>/.yaourtrc</p>
+
+<p style="margin-top: 1em"><b>yaourt</b>(8) obtains
+configuration data from the following sources in the
+following order:</p>
+
+<p style="margin-top: 1em">1. command&minus;line
+options</p>
+
+<p style="margin-top: 1em">2. environment variables</p>
+
+<p style="margin-top: 1em">3. user&rsquo;s configuration
+file ($XDG_CONFIG_HOME/yaourt/yaourtrc takes precedence)</p>
+
+<p style="margin-top: 1em">4. system&minus;wide
+configuration file (/etc/yaourtrc) <b>REPOS=()</b> List of
+repositories where PKGBUILD can be retrieved by rsync. (see
+/etc/abs.conf) <b>AUTOSAVEBACKUPFILE=0</b> If set to 1,
+yaourt will search for config files to back up (.pacnew
+files) after each install. All backed up files are stored in
+/var/lib/yaourt/. These files will be used later with yaourt
+&minus;C to automerge current config files with new config
+files (.pacnew). This option requires root password or sudo
+configured to allow running /usr/bin/pacdiffviewer without
+password. <b>DEVELSRCDIR=&quot;&quot;</b> Specify directory
+where to keep sources for devel packages. <b>DEVEL=0</b> If
+set to 1, always search for new version of development
+(CVS/SVN/Git/Mercurial/other VCS) packages when upgrading
+(yaourt &minus;Su). <b>VISUAL=&quot;$VISUAL&quot;</b> Define
+the editor to use (if the environment variable $VISUAL is
+not set) for PKGBUILD editing. Editor should not fork, for
+gvim: VISUAL=&quot;gvim &minus;&minus;nofork&quot;.
+Preferred over EDITOR. <b>EDITOR=&quot;$EDITOR&quot;</b>
+Define the editor to use (if the environment variables
+$VISUAL and $EDITOR and the yaourtrc option $VISUAL are not
+set) for PKGBUILD editing. Editor should not fork, for gvim:
+EDITOR=&quot;gvim &minus;&minus;nofork&quot;. Fallback
+option for VISUAL. <b>FORCE=0</b> If set to 1, always bypass
+file conflict checks and overwrite conflicting files.
+<b>TMPDIR=&quot;/tmp&quot;</b> Specify the folder to save
+temporary files (default is /tmp). <b>NO_TESTDB=0</b> Set to
+1 to bypass the local database test. <b>SUDONOVERIF=0</b> If
+set to 1, yaourt doesn&rsquo;t do sudo checks. (For users
+with timestamp_timeout=0 in sudoers) <b>SUDOREDIRECT=1</b>
+If set to 0, yaourt doesn&rsquo;t redirect <i>sudo</i>
+standard output. (For users with fingerprint authentication)
+<b>AURCOMMENT=5</b> Show X last comments for packages built
+from AUR Unsupported. 0 to disable comments display, default
+to 5. <b>AURDEVELONLY=0</b> If set to 1, search only for new
+version of development (CVS/SVN/Git/Mercurial/other VCS)
+packages when upgrading (yaourt &minus;Su
+&minus;&minus;devel). <b>AURSEARCH=1</b> If set to 0,
+don&rsquo;t search for packages on AUR Unsupported.
+<b>AURUPGRADE=0</b> If set to 1, always search for new
+version of packages installed from AUR Unsupported when
+upgrading (yaourt &minus;Su).
+<b>AURURL=&quot;https://aur.archlinux.org&quot;</b> Specify
+a custom AUR url. <b>AURVOTE=1</b> If set to 0, don&rsquo;t
+check the vote status for inclusion/keeping in [community],
+and it is unable to vote. <b>EXPORT=0</b> Export built
+package to $EXPORTDIR or, if not defined to $PKGDEST (see
+<b>makepkg.conf</b>(5)). <i>EXPORT=2</i> exports all built
+packages to pacman cache directory (see
+<b>pacman.conf</b>(5)). <b>EXPORTSRC=0</b> Export sources to
+$EXPORTDIR or, if not defined to $SRCPKGDEST or $PKGDEST
+(see <b>makepkg.conf</b>(5)). <b>EXPORTDIR=&quot;&quot;</b>
+Specify the folder where yaourt exports built packages +
+sources. <b>NOCONFIRM=0</b> If set to 1, always use the
+default choice without confirmation. <b>UP_NOCONFIRM=0</b>
+If set to 1, do not prompt for AUR or build upgrades.
+<b>BUILD_NOCONFIRM=0</b> If set to 1, do not prompt while
+building. <b>EDITFILES=1</b> If set to 0, don&rsquo;t
+propose to edit files (from AUR or from ABS).
+<b>NOENTER=1</b> If set to 0, user needs to press Enter for
+each &quot;yes/no&quot; question. <b>USECOLOR=1</b> 0 :
+disable colors</p>
+
+<p style="margin-top: 1em">1 : enable colors (disabled if
+output is not a tty)</p>
+
+<p style="margin-top: 1em">2 : force colored output
+<b>USEPAGER=0</b> 1 : enable pager (use <i>$PAGER</i>
+variable) <b>DETAILUPGRADE=1</b> 0 : no detailed ouput and
+no update classification</p>
+
+<p style="margin-top: 1em">1 : no detailed ouput but
+updates classified</p>
+
+<p style="margin-top: 1em">2 : show packages not found on
+aur / version mismatch / up to date / and those marked as
+out of date</p>
+
+<p style="margin-top: 1em">4 : same as 2 except for up to
+date packages <b>SHOWORPHANS=1</b> If set to 0, search for
+orphans. <b>TERMINALTITLE=1</b> If set to 0, don&rsquo;t
+show the current yaourt&rsquo;s action in terminal title. By
+default, yaourt show messages like &quot;Installing xxx from
+AUR&quot;. Environment variables take precedence over any
+options in yaourtrc files. <b>VISUAL</b> Define the editor
+to use (if the environment variable $VISUAL is not set) for
+PKGBUILD editing. Editor should not fork, for gvim:
+VISUAL=&quot;gvim --nofork&quot;. Preferred over EDITOR.
+<b>EDITOR</b> Define the editor to use (if the environment
+variable $VISUAL and the yaourtrc option $VISUAL are not
+set) for PKGBUILD editing. Editor should not fork, for gvim:
+EDITOR=&quot;gvim --nofork&quot;. Fallback option for
+VISUAL. <b>PACMAN=&quot;pacman&quot;</b> Specify the pacman
+binary to use with yaourt <b>MAKEPKG=&quot;makepkg&quot;</b>
+Specify the makepkg binary to use with yaourt
+<b>DIFFEDITCMD=&quot;vimdiff&quot;</b> Define the diff
+editor to use ($DIFFEDITCMD file1 file2).</p>
+
+<p style="margin-top: 1em"><b>yaourt</b>(8)</p>
+
+<p style="margin-top: 1em">See the yaourt website at
+http://archlinux.fr/yaourt&minus;en/ for more info.</p>
+
+
+<p style="margin-top: 1em">https://github.com/archlinuxfr/yaourt</p>
+
+<p style="margin-top: 1em">Julien MISCHKOWITZ
+&lt;wain@archlinux.fr&gt;</p>
+
+<p style="margin-top: 1em">Current maintainers:</p>
+
+<p style="margin-top: 1em">Tuxce
+&lt;tuxce.net@gmail.com&gt;</p>
+<hr>
+</body>
+</html>
